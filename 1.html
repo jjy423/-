@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1.html</title>
+  <style>
+    h1 {
+      font-size:60px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>장종윤을 소개합니다.</h1><br>
+  <img width="800" height="500"src="2.png">
+  <div id="map" style="width:500px;height:400px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=sdgsdgsfh"></script>
+  <script>
+    var container = document.getElementById('map');
+    var options = {
+      center: new kakao.maps.LatLng(37.310377846510136, 127.0880089131203),
+      level: 3
+    };
+    var map = new kakao.maps.Map(container, options);
+  </script>
+   <ul>
+     <li>이름: 장종윤</li>
+     <li>학과: 글로벌학부 국제지역학과</li>
+     <li>나이: 25살!</li>
+     <li>취미: 낚시!</li>
+   </ul>
+   <ol>좋아하는 활동이나 음식 3가지
+    <li>비빔밥</li>
+    <li>피자</li>
+    <li>회</li>
+   </ol>
+   <ul>
+    <li>오늘 하면서 느낌점: ㄱ... 기초가 부족해요 ㅠ-ㅠ</li>
+  </ul>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <!-- 페이저를 사용할 태그에는 class에 pager를 추가하면 된다. -->
+   <ul class="pager">
+    <!-- 2개 이상의 아이템을 넣는다해도 문제는 없습니다만, 그럼 paging 클래스와 차이가 없어진다.-->
+    <!-- previous의 클래스 경우는 좌로 밀착, next는 우로 밀착이다. previous와 next를 생략하면 가운데 정렬이다. -->
+    <li><a href="home.html">홈</a></li>
+    <li><a href="lee.html">성규씨 →</a></li>
+    </ul>
+</body>
+</html>

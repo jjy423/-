@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+		
+		h3 {
+            font-size:60px;
+            text-align:center;
+            }
+		ol {color: blue}
+        
+	</style>
+
+    <div class="container">
+        <br>
+            <h3><b>나는야 성규님</b><sub></sub></h3>
+        <br>
+    <title>ㅎ</title>
+    <img width="800" height="500"src="1.jpg">
+    <br>
+   
+</head>
+<body>
+    <br>
+             <li>이름</li>
+            <ul>
+                <li>이성규</li>
+            </ul>
+            <li>학과</li>
+            <ul>
+                <li>컴퓨터공학과</li>
+            </ul> 
+            <li>나이</li>
+            <ul>
+                <li>27</li>
+            </ul> 
+            <li>취미</li>
+            <ul>
+                <li>노래방가기</li>
+            </ul>
+            <li>좋아하는 음식 3가지 활동</li>
+            <ul>
+                <ol>
+                    <li>누워서 좌로구르기</li>
+                    <li>누워서 우로구르기</li>
+                    <li>공부하는척 하기</li>
+                </ol>
+            </ul>
+            <li>오늘 하면서 느낀점</li>
+            <ul>
+                <li>너무재밌당 </li>
+            </ul>
+            <br>
+            <br>
+            <li>저희 집이에요 오지마세여 ㅎ</li>
+            <ul>
+                <li>밥사주시면 오셔도되영 ㅎ</li>
+            </ul>
+                <div id="map" style="width:500px;height:400px;"></div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=asefgsafg"></script>
+                <script>
+                    var container = document.getElementById('map');
+                    var options = {
+                        center: new kakao.maps.LatLng(37.57996435972271, 126.91479750120263),
+                        level: 3
+                    };
+            
+                    var map = new kakao.maps.Map(container, options);
+            
+                    var points = [
+                new kakao.maps.LatLng(37.57996435972271, 126.91479750120263),
+                new kakao.maps.LatLng(37.57996435972271, 126.91479750120263),
+                new kakao.maps.LatLng(37.57996435972271, 126.91479750120263)
+            ];
+            
+            
+                    var bounds = new kakao.maps.LatLngBounds();    
+            
+                    var i, marker;
+                for (i = 0; i < points.length; i++) {
+            
+                    marker =     new kakao.maps.Marker({ position : points[i] });
+                    marker.setMap(map);
+                
+                     bounds.extend(points[i]);
+                    }
+                </script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+       <!-- 페이저를 사용할 태그에는 class에 pager를 추가하면 된다. -->
+       <ul class="pager">
+        <!-- 2개 이상의 아이템을 넣는다해도 문제는 없습니다만, 그럼 paging 클래스와 차이가 없어진다.-->
+        <!-- previous의 클래스 경우는 좌로 밀착, next는 우로 밀착이다. previous와 next를 생략하면 가운데 정렬이다. -->
+        <li><a href="1.html"><- 종윤씨 </a></li>
+        <li><a href="home.html">홈</a></li>
+        </ul>
+    </body>
+    </html>
